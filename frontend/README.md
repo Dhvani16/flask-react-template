@@ -27,10 +27,6 @@ To run the project locally follow the following steps:
 * `docker build -t frontend-react .`
 * `docker run -p 3000:3000 -v /HOST/PATH/TO/FRONTEND/FOLDER:/app frontend-react`
 
-## License
-
-This project is licensed under the MIT License
-
 ## Extra information
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

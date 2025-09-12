@@ -34,7 +34,3 @@ The JSON API is a test endpoint to start development
 
 * `http://localhost:5000/api/test`
 (returns a test json response)
-
-## License
-
-This project is licensed under the MIT License
