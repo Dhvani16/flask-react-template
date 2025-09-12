@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend-react
+  template:
+    metadata:
+      labels:
+        app: frontend-react
+    spec:
+      containers:
+      - name: frontend-react
+        image: ${{ secrets.DOCKER_USERNAME }}/frontend-react:latest
+        ports:
+        - containerPort: 3000
