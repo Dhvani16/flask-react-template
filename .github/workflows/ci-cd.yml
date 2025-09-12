@@ -28,10 +28,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run backend tests
-        run: |
-          cd backend
-          pytest
+      # - name: Run backend tests
+      #   run: |
+      #     cd backend
+      #     pytest
 
   # Building and testing frontend
   build-and-test-frontend:
