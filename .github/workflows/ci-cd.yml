@@ -12,7 +12,8 @@ on:
 jobs:
   # Building and testing the backend
   build-and-test-backend:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -35,7 +36,8 @@ jobs:
 
   # Building and testing frontend
   build-and-test-frontend:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
