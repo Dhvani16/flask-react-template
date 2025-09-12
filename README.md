@@ -20,7 +20,7 @@ You will need the following things properly installed on your computer:
 
 ## Installation
 
-* run `git clone https://github.com/caseyr003/flask-react-template.git`
+* run `git clone https://github.com/Dhvani16/flask-react-template.git`
 
 ## Running
 

@@ -13,7 +13,7 @@ class App extends Component {
           </p>
           <a
             className="App-link"
-            href="https://github.com/caseyr003/flask-react-template"
+            href="https://github.com/Dhvani16/flask-react-template"
             target="_blank"
             rel="noopener noreferrer"
           >

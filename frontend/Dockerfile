@@ -1,14 +1,19 @@
-FROM node:8
+FROM node:18
 
-RUN apt-get update
-
-# for react frontend
-EXPOSE 3000
-EXPOSE 5000
-
-# set working directory
-ADD . /app
+# Set working directory before copying files
 WORKDIR /app
 
-# This is the runtime command for the container
-CMD yarn start
+# Copy package files first for better caching
+COPY package.json yarn.lock ./
+
+# Install dependencies including react-scripts
+RUN yarn install
+
+# Copy rest of the app source code
+COPY . .
+
+# Expose ports
+EXPOSE 3000
+
+# Runtime command to start dev server
+CMD ["yarn", "start"]
